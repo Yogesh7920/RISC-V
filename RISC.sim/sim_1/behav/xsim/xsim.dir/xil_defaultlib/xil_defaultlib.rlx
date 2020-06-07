@@ -1,0 +1,15 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALU.v,1584699321,verilog,,C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALUCtrl.v,,ALU,,,,,,,,
+C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALUCtrl.v,1584558996,verilog,,C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Control.v,,ALUCtrl,,,,,,,,
+C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Control.v,1584558996,verilog,,C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v,,Control,,,,,,,,
+C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v,1584558996,verilog,,C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v,,Imm_Gen,,,,,,,,
+C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v,1584698233,verilog,,C:/Users/raghu/RISC/RISC.srcs/sources_1/new/decoder.v,,PC,,,,,,,,
+C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v,1584596803,verilog,,,,RISC,,,,,,,,
+C:/Users/raghu/RISC/RISC.srcs/sources_1/new/decoder.v,1584699749,verilog,,C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v,,decoder,,,,,,,,
+C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v,1584694572,verilog,,C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v,,instruction,,,,,,,,
+C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v,1584694772,verilog,,C:/Users/raghu/RISC/RISC.srcs/sources_1/new/register.v,,memory,,,,,,,,
+C:/Users/raghu/RISC/RISC.srcs/sources_1/new/register.v,1584538499,verilog,,C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v,,register,,,,,,,,

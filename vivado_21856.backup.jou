@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Feb 18 17:11:43 2020
+# Process ID: 21856
+# Current directory: C:/Users/raghu/RISC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9320 C:\Users\raghu\RISC\RISC.xpr
+# Log file: C:/Users/raghu/RISC/vivado.log
+# Journal file: C:/Users/raghu/RISC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/raghu/RISC/RISC.xpr
+
+update_compile_order -fileset sources_1
+close [ open C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALUCtrl.v w ]
+add_files C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALUCtrl.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Control.v w ]
+add_files C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Control.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v w ]
+add_files C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/raghu/RISC/RISC.srcs/sources_1/new/MUX.v w ]
+add_files C:/Users/raghu/RISC/RISC.srcs/sources_1/new/MUX.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Add.v w ]
+add_files C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Add.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v w ]
+add_files C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Add.v] -no_script -reset -force -quiet
+remove_files  C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Add.v
+file delete -force C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Add.v
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+refresh_design
+refresh_design
+launch_simulation
+source RISC.tcl
+close_sim
+launch_simulation
+source RISC.tcl
+add_force {/RISC/clk} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 10 us
+close_sim

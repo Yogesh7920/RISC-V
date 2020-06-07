@@ -1,0 +1,1604 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Feb 18 17:11:43 2020
+# Process ID: 21856
+# Current directory: C:/Users/raghu/RISC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9320 C:\Users\raghu\RISC\RISC.xpr
+# Log file: C:/Users/raghu/RISC/vivado.log
+# Journal file: C:/Users/raghu/RISC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/raghu/RISC/RISC.xpr
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 18 17:12:22 2020...
+ado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 897.750 ; gain = 245.395
+update_compile_order -fileset sources_1
+close [ open C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALUCtrl.v w ]
+add_files C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALUCtrl.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Control.v w ]
+add_files C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Control.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v w ]
+add_files C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/raghu/RISC/RISC.srcs/sources_1/new/MUX.v w ]
+add_files C:/Users/raghu/RISC/RISC.srcs/sources_1/new/MUX.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Add.v w ]
+add_files C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Add.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v w ]
+add_files C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Add.v] -no_script -reset -force -quiet
+remove_files  C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Add.v
+file delete -force C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Add.v
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: RISC
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1429.266 ; gain = 216.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RISC' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element nb_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v:39]
+WARNING: [Synth 8-6014] Unused sequential element b_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v:23]
+ERROR: [Synth 8-685] variable 'pc' should not be used in output port connection [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:55]
+ERROR: [Synth 8-6156] failed synthesizing module 'RISC' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1503.879 ; gain = 291.598
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+4 Infos, 2 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: RISC
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1503.879 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RISC' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element nb_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v:39]
+WARNING: [Synth 8-6014] Unused sequential element b_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:24]
+WARNING: [Synth 8-639] system function call 'fopen' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:31]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:33]
+INFO: [Common 17-14] Message 'Synth 8-639' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:29]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'instruction' (2#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:24]
+WARNING: [Synth 8-689] width (3) of port connection 'pc' does not match port width (1) of module 'instruction' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:56]
+WARNING: [Synth 8-689] width (64) of port connection 'state' does not match port width (3) of module 'instruction' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:56]
+INFO: [Synth 8-6157] synthesizing module 'Control' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Control' (3#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Control.v:23]
+WARNING: [Synth 8-689] width (2) of port connection 'Regwrite' does not match port width (1) of module 'Control' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:57]
+WARNING: [Synth 8-7023] instance 'C' of module 'Control' has 8 connections declared, but only 7 given [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:57]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (4#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/decoder.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'state' does not match port width (3) of module 'decoder' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:58]
+WARNING: [Synth 8-689] width (5) of port connection 'f7' does not match port width (7) of module 'decoder' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:58]
+WARNING: [Synth 8-689] width (3) of port connection 'rs1' does not match port width (5) of module 'decoder' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:58]
+WARNING: [Synth 8-689] width (5) of port connection 'f3' does not match port width (3) of module 'decoder' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:58]
+WARNING: [Synth 8-689] width (7) of port connection 'rd' does not match port width (5) of module 'decoder' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:58]
+WARNING: [Synth 8-7023] instance 'D1' of module 'decoder' has 9 connections declared, but only 8 given [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:58]
+INFO: [Synth 8-6157] synthesizing module 'Imm_Gen' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v:23]
+WARNING: [Synth 8-567] referenced signal 'opcode' should be on the sensitivity list [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v:33]
+WARNING: [Synth 8-567] referenced signal 'rs2' should be on the sensitivity list [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v:33]
+WARNING: [Synth 8-567] referenced signal 'rd' should be on the sensitivity list [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'Imm_Gen' (5#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/register.v:23]
+WARNING: [Synth 8-6014] Unused sequential element file_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/register.v:39]
+WARNING: [Synth 8-6014] Unused sequential element scan_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/register.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'register' (6#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (7#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALUCtrl' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALUCtrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALUCtrl' (8#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALUCtrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'memory' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v:23]
+WARNING: [Synth 8-6014] Unused sequential element file_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'memory' (10#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RISC' (11#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:23]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[63]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[62]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[61]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[60]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[59]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[58]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[57]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[56]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[55]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[54]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[53]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[52]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[51]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[50]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[49]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[48]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[47]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[46]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[45]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[44]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[43]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[42]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[41]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[40]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[39]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[38]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[37]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[36]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[35]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[34]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[33]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[32]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[31]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[30]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[29]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[28]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[27]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[26]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[25]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[24]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[23]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[22]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[21]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[20]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[19]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[18]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[17]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[16]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[15]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[14]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[13]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[12]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[11]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[10]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[9]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[8]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[7]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port rs1[4]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port rs1[3]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port rs1[2]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port rs1[1]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port rs1[0]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port f3[2]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port f3[1]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port f3[0]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[63]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[62]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[61]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[60]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[59]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[58]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[57]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[56]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[55]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[54]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[53]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[52]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[51]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[50]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[49]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[48]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[47]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[46]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[45]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[44]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[43]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[42]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[41]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[40]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[39]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[38]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[37]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[36]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[35]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[34]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[33]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[32]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[31]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[30]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[29]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1503.879 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1503.879 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1503.879 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1503.879 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1589.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1653.559 ; gain = 149.680
+28 Infos, 318 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1653.559 ; gain = 149.680
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1685.609 ; gain = 31.813
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RISC' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element nb_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v:39]
+WARNING: [Synth 8-6014] Unused sequential element b_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:24]
+WARNING: [Synth 8-639] system function call 'fopen' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:32]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+INFO: [Common 17-14] Message 'Synth 8-639' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'instruction' (2#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:24]
+WARNING: [Synth 8-689] width (64) of port connection 'state' does not match port width (3) of module 'instruction' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:56]
+INFO: [Synth 8-6157] synthesizing module 'Control' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Control' (3#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (4#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/decoder.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'state' does not match port width (3) of module 'decoder' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:58]
+WARNING: [Synth 8-689] width (5) of port connection 'f7' does not match port width (7) of module 'decoder' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:58]
+WARNING: [Synth 8-689] width (3) of port connection 'rs1' does not match port width (5) of module 'decoder' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:58]
+WARNING: [Synth 8-689] width (5) of port connection 'f3' does not match port width (3) of module 'decoder' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:58]
+WARNING: [Synth 8-689] width (7) of port connection 'rd' does not match port width (5) of module 'decoder' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:58]
+WARNING: [Synth 8-7023] instance 'D1' of module 'decoder' has 9 connections declared, but only 8 given [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:58]
+INFO: [Synth 8-6157] synthesizing module 'Imm_Gen' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v:23]
+WARNING: [Synth 8-567] referenced signal 'rs2' should be on the sensitivity list [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v:33]
+WARNING: [Synth 8-567] referenced signal 'rd' should be on the sensitivity list [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'Imm_Gen' (5#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/register.v:23]
+WARNING: [Synth 8-6014] Unused sequential element file_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/register.v:39]
+WARNING: [Synth 8-6014] Unused sequential element scan_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/register.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'register' (6#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (7#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALUCtrl' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALUCtrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALUCtrl' (8#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALUCtrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'memory' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v:23]
+WARNING: [Synth 8-6014] Unused sequential element file_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'memory' (10#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RISC' (11#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:23]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[63]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[62]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[61]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[60]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[59]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[58]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[57]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[56]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[55]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[54]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[53]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[52]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[51]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[50]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[49]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[48]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[47]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[46]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[45]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[44]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[43]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[42]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[41]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[40]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[39]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[38]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[37]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[36]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[35]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[34]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[33]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[32]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[31]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[30]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[29]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[28]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[27]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[26]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[25]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[24]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[23]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[22]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[21]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[20]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[19]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[18]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[17]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[16]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[15]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[14]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[13]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[12]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[11]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[10]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[9]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[8]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[7]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port rs1[4]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port rs1[3]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port rs1[2]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port rs1[1]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port rs1[0]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port f3[2]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port f3[1]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port f3[0]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[63]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[62]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[61]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[60]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[59]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[58]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[57]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[56]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[55]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[54]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[53]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[52]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[51]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[50]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[49]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[48]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[47]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[46]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[45]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[44]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[43]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[42]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[41]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[40]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[39]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[38]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[37]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[36]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[35]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[34]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[33]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[32]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[31]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[30]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[29]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1748.289 ; gain = 94.492
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1772.109 ; gain = 118.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1772.109 ; gain = 118.313
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1772.109 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1818.641 ; gain = 164.844
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1940.992 ; gain = 26.770
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RISC' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v:23]
+WARNING: [Synth 8-6014] Unused sequential element nb_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v:39]
+WARNING: [Synth 8-6014] Unused sequential element b_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:24]
+WARNING: [Synth 8-639] system function call 'fopen' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:32]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+WARNING: [Synth 8-639] system function call 'fscanf' not supported [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:34]
+INFO: [Common 17-14] Message 'Synth 8-639' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+WARNING: [Synth 8-3848] Net all_ins in module/entity instruction does not have driver. [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:30]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'instruction' (2#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v:24]
+WARNING: [Synth 8-689] width (64) of port connection 'state' does not match port width (3) of module 'instruction' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:56]
+INFO: [Synth 8-6157] synthesizing module 'Control' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Control' (3#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (4#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Imm_Gen' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v:23]
+WARNING: [Synth 8-567] referenced signal 'rs2' should be on the sensitivity list [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v:33]
+WARNING: [Synth 8-567] referenced signal 'rd' should be on the sensitivity list [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'Imm_Gen' (5#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/register.v:23]
+WARNING: [Synth 8-6014] Unused sequential element file_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/register.v:39]
+WARNING: [Synth 8-6014] Unused sequential element scan_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/register.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'register' (6#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (7#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/MUX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALUCtrl' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALUCtrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALUCtrl' (8#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALUCtrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'memory' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v:23]
+WARNING: [Synth 8-6014] Unused sequential element file_reg was removed.  [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'memory' (10#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RISC' (11#1) [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:23]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[63]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[62]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[61]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[60]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[59]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[58]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[57]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[56]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[55]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[54]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[53]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[52]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[51]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[50]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[49]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[48]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[47]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[46]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[45]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[44]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[43]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[42]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[41]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[40]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[39]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[38]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[37]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[36]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[35]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[34]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[33]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[32]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[31]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[30]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[29]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[28]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[27]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[26]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[25]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[24]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[23]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[22]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[21]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[20]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[19]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[18]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[17]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[16]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[15]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[14]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[13]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[12]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[11]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[10]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[9]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[8]
+WARNING: [Synth 8-3331] design memory has unconnected port adrs[7]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port rs1[4]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port rs1[3]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port rs1[2]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port rs1[1]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port rs1[0]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port f3[2]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port f3[1]
+WARNING: [Synth 8-3331] design Imm_Gen has unconnected port f3[0]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[63]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[62]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[61]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[60]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[59]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[58]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[57]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[56]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[55]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[54]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[53]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[52]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[51]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[50]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[49]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[48]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[47]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[46]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[45]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[44]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[43]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[42]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[41]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[40]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[39]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[38]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[37]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[36]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[35]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[34]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[33]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[32]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[31]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[30]
+WARNING: [Synth 8-3331] design instruction has unconnected port pc[29]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1947.309 ; gain = 33.086
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1971.055 ; gain = 56.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1971.055 ; gain = 56.832
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2045.637 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 2128.250 ; gain = 214.027
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RISC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim/instruction.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim/register.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim/memory.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RISC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALUCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_Gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim'
+"xelab -wto a389ba2faedf459ca82ee8a4b4164365 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RISC_behav xil_defaultlib.RISC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a389ba2faedf459ca82ee8a4b4164365 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RISC_behav xil_defaultlib.RISC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 64 for port 'pc' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:56]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.Imm_Gen
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.ALUCtrl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.RISC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RISC_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim/xsim.dir/RISC_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim/xsim.dir/RISC_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Feb 18 18:58:24 2020. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 110.281 ; gain = 23.230
+INFO: [Common 17-206] Exiting Webtalk at Tue Feb 18 18:58:24 2020...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 2149.664 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RISC_behav -key {Behavioral:sim_1:Functional:RISC} -tclbatch {RISC.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source RISC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: file C:/Users/student/RISC/instruction.txt could not be opened
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v at line 34 is not valid.
+WARNING: file C:/Users/student/RISC/memory.txt could not be opened
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+ERROR: File descriptor (0) passed to $fscanf in file C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v at line 38 is not valid.
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2153.504 ; gain = 0.590
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RISC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 2153.504 ; gain = 3.840
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2153.504 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'RISC' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim/instruction.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim/register.txt'
+INFO: [SIM-utils-43] Exported 'C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim/memory.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj RISC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/ALUCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/Imm_Gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imm_Gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/instruction.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RISC
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim'
+"xelab -wto a389ba2faedf459ca82ee8a4b4164365 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RISC_behav xil_defaultlib.RISC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a389ba2faedf459ca82ee8a4b4164365 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot RISC_behav xil_defaultlib.RISC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 64 for port 'pc' [C:/Users/raghu/RISC/RISC.srcs/sources_1/new/RISC.v:56]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.instruction
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.Imm_Gen
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.MUX
+Compiling module xil_defaultlib.ALUCtrl
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.RISC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RISC_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/raghu/RISC/RISC.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RISC_behav -key {Behavioral:sim_1:Functional:RISC} -tclbatch {RISC.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source RISC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2153.504 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RISC_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 2153.504 ; gain = 0.000
+add_force {/RISC/clk} -radix bin {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 10 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 18 19:04:15 2020...

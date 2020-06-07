@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="RISC_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="RISC" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="10951947fs"></ZoomStartTime>
+      <ZoomEndTime time="14559948fs"></ZoomEndTime>
+      <Cursor1Time time="13223947fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="261"></NameColumnWidth>
+      <ValueColumnWidth column_width="307"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/RISC/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/ins" type="array">
+      <obj_property name="ElementShortName">ins[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ins[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/a" type="array">
+      <obj_property name="ElementShortName">a[63:0]</obj_property>
+      <obj_property name="ObjectShortName">a[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/b" type="array">
+      <obj_property name="ElementShortName">b[63:0]</obj_property>
+      <obj_property name="ObjectShortName">b[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/imm" type="array">
+      <obj_property name="ElementShortName">imm[63:0]</obj_property>
+      <obj_property name="ObjectShortName">imm[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/controls" type="array">
+      <obj_property name="ElementShortName">controls[5:0]</obj_property>
+      <obj_property name="ObjectShortName">controls[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/rd" type="array">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/c" type="array">
+      <obj_property name="ElementShortName">c[63:0]</obj_property>
+      <obj_property name="ObjectShortName">c[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/pc" type="array">
+      <obj_property name="ElementShortName">pc[63:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/ALUc" type="array">
+      <obj_property name="ElementShortName">ALUc[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUc[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/RM" type="array">
+      <obj_property name="ElementShortName">RM[63:0]</obj_property>
+      <obj_property name="ObjectShortName">RM[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/over" type="logic">
+      <obj_property name="ElementShortName">over</obj_property>
+      <obj_property name="ObjectShortName">over</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/rdv" type="array">
+      <obj_property name="ElementShortName">rdv[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdv[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/branch_mux" type="logic">
+      <obj_property name="ElementShortName">branch_mux</obj_property>
+      <obj_property name="ObjectShortName">branch_mux</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/zero" type="logic">
+      <obj_property name="ElementShortName">zero</obj_property>
+      <obj_property name="ObjectShortName">zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/rs1" type="array">
+      <obj_property name="ElementShortName">rs1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC/rs2" type="array">
+      <obj_property name="ElementShortName">rs2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs2[4:0]</obj_property>
+   </wvobject>
+</wave_config>
